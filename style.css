@@ -1,0 +1,299 @@
+body{
+ padding:0px;
+ margin:0px;
+ background: url(img/backround.png);
+}
+.container{
+ max-width:1000px;
+ margin: 0 auto;
+}
+
+/*  */
+#menu1 {
+position: fixed;
+top: 0px;
+right: 0px;
+}
+#menu1 ul {
+list-style-type: none;
+text-align: center;
+ }
+#menu1 li {
+color: #770505;
+display: inline-block;
+width: 100px;
+height: 40px;
+line-height: px;
+margin-left: -5px;
+}
+#menu1 a {
+text-decoration: none;
+color: rgb(143, 6, 6);
+display:inline-block;
+}
+
+/*  */
+.chulogo{
+
+  position: relative;
+    font-size: 20px;
+    color: rgb(31, 5, 5);
+    font-variant: small-caps;
+    text-shadow: red;
+    width: 380px;
+    height: 40px;
+    top: 190px;
+    left: 100;
+}
+.container > header{
+background-image: url(img/logo.jpg);
+background-size:100% 100%;
+height:0px;
+padding-bottom:25%;
+}
+
+/*  */
+video {
+    padding-left: 0px;
+    width: 35%;
+    height: auto ;
+    position: absolute;
+    top: 350px;
+    right: 300px;
+}
+
+/*  */
+.container > nav{
+  width: 100%; 
+ line-height:20px;
+ background-color:rgb(19, 207, 207);
+ color:white;
+ text-align:center;
+ font-variant:small-caps;
+}
+
+/*  */
+body {
+    font-family: sans-serif;
+    color: #333;
+  }
+  
+  /*==Style cho menu===*/
+  #menu ul {
+    background: #1F568B;
+    list-style-type: none;
+    text-align: center;
+  }
+  #menu li {
+    color: #f1f1f1;
+    display: inline-block;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: -5px;
+  }
+  #menu a {
+    text-decoration: none;
+    color: #fff;
+    display:inline-block;
+  }
+.trangchu{
+    display: none;
+}
+/* #menu li:hover>.trangchu {
+    width: 200px;
+    height: 85px;
+    background-color: rgb(54, 181, 231);
+    border: 3px solid black;
+    border-radius: 5px;
+    box-shadow: 2px 0px 3px red;
+    display: block;
+    position: absolute;
+    padding-left: 0%;
+} */
+#menu a:hover{
+  position: relative;
+    border: 2px double black;
+    border-radius: 5px;
+    background: #F1F1F1;
+    color: #333;
+    z-index: 100px;
+}
+
+/*  */
+  header {
+    text-align: center;
+}
+
+/* video lịch sử */
+video {
+    width: 35%;
+    height: auto ;
+    position: absolute;
+    top: 350px;
+    right: 300px;
+}
+
+/*  */
+.container > article{ 
+min-height:600px;
+width:75%;
+background-color:rgb(244, 247, 231);
+float:left;
+}
+
+/*  */
+.container > aside{
+min-height:1670px;
+width:25%;
+background-color:rgb(244, 247, 231);
+float:right;
+}
+img{
+  width: 90%;
+  padding-left: 5%;
+}
+iframe{
+  width: 100%;
+  padding-top: 10px;
+}
+
+
+/*  */
+.container > footer{
+border-top:5px double orangered;
+line-height:25px;
+background-color:lightcyan;
+text-align:center;
+font-variant: normal;
+font-family: Arial, Helvetica, sans-serif;
+clear:both;
+}
+
+.khungtrangchu{
+  position: relative;
+  top: 10px;
+  left: 20px;
+  bottom: 10px;
+  width: 700px;
+  height: 1600px;
+}
+.trangchuBD{
+  position: relative;
+  top: 10px;
+  left: 20px;
+  bottom: 10px;
+  width: 700px;
+  height: 1450px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.trangchuBD .GT{
+  font-size: 25px;
+  text-align: center;
+}
+.trangchuBD .GT1{
+  color: #126ec4;
+  text-align: center;
+}
+.khunglike{
+  position: relative;
+  top: 5px;
+  left: 20px;
+  width: 650px;
+  height: 50px;
+}
+.menuaside li{
+  display: block;
+  font-variant: small-caps;
+  line-height: 50px;
+  color: rgb(134, 13, 13);
+  width: 200px;
+  height:50px;
+  background-color: rgb(237, 238, 213);
+  border-radius: 10px;
+  border: 2px solid black;
+}
+.menuaside li a{
+  color: #770505;
+  font-size: 15px;
+}
+.menuaside li:hover{
+  background-color: rgb(237, 238, 213);
+  box-shadow: 0 0 10px green;
+}
+
+input[type="text"] {
+  width: 130px;
+  box-sizing: border-box;
+  border: 1px solid black;
+  border-radius: 4px;
+  outline:none;
+  padding: 12px 14px;
+  transition:0.6s ease-in-out;
+}
+input[type="text"]:focus{
+  width:500px; 
+  background-color:lightpink;
+}
+.tour{
+  display: none;
+}
+#menu li:hover ul.tour{
+  width: 200px;
+  height: 85px;
+  background-color: rgb(54, 181, 231);
+  border: 3px solid black;
+  border-radius: 5px;
+  box-shadow: 2px 0px 3px red;
+  display: block;
+  position: absolute;
+  padding-left: 0%;
+}
+#menu .tour>li{
+  display: inline-block;
+}
+.bando{
+  font-variant: small-caps;
+  color: rgb(59, 5, 5);
+  width: 100%;
+  height: 330px;
+}
+.loichao{
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.loichao>h3{
+  margin: 0px;
+  border-radius: 5px;
+  background-color: rgb(223, 100, 100);
+  text-align: center;
+  font-variant:small-caps ;
+}
+.loichao>p{
+  font-size: 15px;
+  text-align: center;
+}
+.loichao>p>{
+  text-align: justify;
+}
+.thamdo{
+  border: 1px solid black;
+  border-radius: 5px;
+  text-align: center;
+  color: #770505;
+}
+.thamdo>.bangthamdo{
+  border: 2px solid black;
+  border-radius: 5px;
+  margin: 10px;
+  width: 90%;
+  height: 180px;
+}
+.baotangbd{
+  width: 50%;
+  height: 300px;
+  border: 3px solid black;
+  border-radius: 5px;
+}
+
