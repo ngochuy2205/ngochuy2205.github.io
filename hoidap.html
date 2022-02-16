@@ -42,7 +42,7 @@
                 <li> <i class="fa fa-hourglass-end" aria-hidden="true"></i> <a href="DTLS.html">Di Tích Lịch sử</a> </li>
                 <li> <i class="fa fa-file-text-o" aria-hidden="true"></i> <a href="baiviet.html">Bài viết</a> </li>
                 <li> <i class="fa fa-server" aria-hidden="true"></i> <a href="dv.html">Dịch Vụ Tham Quam</a> </li>
-                <li> <i class="fa fa-comments-o" aria-hidden="true"></i> <a href="#">Hỏi Đáp & Góp Ý</a></li>
+                <li> <i class="fa fa-comments-o" aria-hidden="true"></i> <a href="hoidap.html">Hỏi Đáp & Góp Ý</a></li>
             </div>
 
         </nav>
@@ -69,7 +69,38 @@
 
 
     </div>
-    <script src="https://uhchat.net/code.php?f=ce3feb"></script>
+    
+    <!-- Messenger Plugin chat Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Plugin chat code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "402116553606078");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v13.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+
 </body>
 
 </html> 

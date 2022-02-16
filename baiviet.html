@@ -10,94 +10,131 @@
     <link rel="stylesheet" href="mail.css">
     <link rel="stylesheet" href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
     <style>
-        * {
-            box-sizing: border-box;
-        }
-
         body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
+          font-family: Arial;
+          margin: 0;
         }
-
-        .header {
-            text-align: center;
-            padding: 32px;
+        
+        * {
+          box-sizing: border-box;
         }
-
-        .row {
-            display: -ms-flexbox;
-            /* IE 10 */
-            display: flex;
-            -ms-flex-wrap: wrap;
-            /* IE 10 */
-            flex-wrap: wrap;
-            padding: 0 4px;
+        
+        img {
+          vertical-align: middle;
         }
-
-        /* Create two equal columns that sits next to each other */
+        
+        /* Position the image container (needed to position the left and right arrows) */
+        .container {
+          position: relative;
+        }
+        
+        /* Hide the images by default */
+        .mySlides {
+          display: none;
+        }
+        
+        /* Add a pointer when hovering over the thumbnail images */
+        .cursor {
+          cursor: pointer;
+        }
+        
+        /* Next & previous buttons */
+        .prev,
+        .next {
+          cursor: pointer;
+          position: absolute;
+          top: 40%;
+          width: auto;
+          padding: 16px;
+          margin-top: -50px;
+          color: white;
+          font-weight: bold;
+          font-size: 20px;
+          border-radius: 0 3px 3px 0;
+          user-select: none;
+          -webkit-user-select: none;
+        }
+        
+        /* Position the "next button" to the right */
+        .next {
+          right: 0;
+          border-radius: 3px 0 0 3px;
+        }
+        
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover,
+        .next:hover {
+          background-color: rgba(0, 0, 0, 0.8);
+        }
+        
+        /* Number text (1/3 etc) */
+        .numbertext {
+          color: #f2f2f2;
+          font-size: 12px;
+          padding: 8px 12px;
+          position: absolute;
+          top: 0;
+        }
+        
+        /* Container for image text */
+        .caption-container {
+          text-align: center;
+          background-color: #222;
+          padding: 2px 16px;
+          color: white;
+        }
+        
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        
+        /* Six columns side by side */
         .column {
-            -ms-flex: 50%;
-            /* IE 10 */
-            flex: 50%;
-            padding: 0 4px;
+          float: left;
+          width: 16.66%;
         }
-
-        .column img {
-            margin-top: 8px;
-            vertical-align: middle;
+        
+        /* Add a transparency effect for thumnbail images */
+        .demo {
+          opacity: 0.6;
         }
-
-        /* Style the buttons */
-        .btn {
-            border: none;
-            outline: none;
-            padding: 10px 16px;
-            background-color: #f1f1f1;
-            cursor: pointer;
-            font-size: 18px;
+        
+        .active,
+        .demo:hover {
+          opacity: 1;
         }
-
-        .btn:hover {
-            background-color: #ddd;
-        }
-
-        .btn.active {
-            background-color: #666;
-            color: white;
-        }
-    </style>
-    <script>
-        var slideIndex = 1;
-        showSlides(slideIndex);
-
-        // Next/previous controls
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-
-        // Thumbnail image controls
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-
-        function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("demo");
-            var captionText = document.getElementById("caption");
-            if (n > slides.length) { slideIndex = 1 }
-            if (n < 1) { slideIndex = slides.length }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-            captionText.innerHTML = dots[slideIndex - 1].alt;
-        }
-
+        </style>
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
     </script>
 </head>
 
@@ -133,7 +170,7 @@
                 </li>
                 <li> <i class="fa fa-file-text-o" aria-hidden="true"></i> <a href="baiviet.html">Bài viết</a> </li>
                 <li> <i class="fa fa-server" aria-hidden="true"></i> <a href="dv.html">Dịch Vụ Tham Quam</a> </li>
-                <li> <i class="fa fa-comments-o" aria-hidden="true"></i> <a href="#">Hỏi Đáp & Góp Ý</a></li>
+                <li> <i class="fa fa-comments-o" aria-hidden="true"></i> <a href="hoidap.html">Hỏi Đáp & Góp Ý</a></li>
             </div>
 
         </nav>
@@ -204,32 +241,32 @@
                             <div class="column">
                                 <img class="demo cursor"
                                     src="https://ttdtbinhdinh.coquan.vn/publish/thumbnail/2005340/1170x658xdefault/upload/2005340/20210612/2f6a35f0502c5f7f0f1bc3cfafe2a8b81_341189589.jpg"
-                                    style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+                                    style="width:100%" onclick="currentSlide(1)" alt=" Bảo Tàng Bình Định">
                             </div>
                             <div class="column">
                                 <img class="demo cursor"
                                     src="https://ttdtbinhdinh.coquan.vn/publish/thumbnail/2005340/1170x658xdefault/upload/2005340/20210612/aafda48aac97f8c098e15992e144b60e6_402370430.jpg"
-                                    style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+                                    style="width:100%" onclick="currentSlide(2)" alt="Một Số Hiện Vật">
                             </div>
                             <div class="column">
                                 <img class="demo cursor"
                                     src="https://ttdtbinhdinh.coquan.vn/publish/thumbnail/2005340/1170x658xdefault/upload/2005340/20210612/db46a25ab59bc911664f211bca1cb4043_696692643.jpg"
-                                    style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+                                    style="width:100%" onclick="currentSlide(3)" alt="Một Số Hiện Vật">
                             </div>
                             <div class="column">
                                 <img class="demo cursor"
                                     src="https://ttdtbinhdinh.coquan.vn/publish/thumbnail/2005340/1170x658xdefault/upload/2005340/20210612/d04d64f14eec0b886ed6e42cbaeff03f5_545216389.jpg"
-                                    style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+                                    style="width:100%" onclick="currentSlide(4)" alt="Một Số Hiện Vật">
                             </div>
                             <div class="column">
                                 <img class="demo cursor"
                                     src="https://ttdtbinhdinh.coquan.vn/publish/thumbnail/2005340/1170x658xdefault/upload/2005340/20210612/e4316b253480280917e8dd9cddf1c1f38_478453290.jpg"
-                                    style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+                                    style="width:100%" onclick="currentSlide(5)" alt="Một Số Hiện Vật">
                             </div>
                             <div class="column">
                                 <img class="demo cursor"
                                     src="https://ttdtbinhdinh.coquan.vn/publish/thumbnail/2005340/1170x658xdefault/upload/2005340/20210612/6485d6dfca43c25824c1c46886f02c327_811409605.jpg"
-                                    style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+                                    style="width:100%" onclick="currentSlide(6)" alt="Một Số Hiện Vật">
                             </div>
                         </div>
                     </div>
@@ -664,7 +701,7 @@
                 </div>
                 <div class="header" id="myHeader">
                     <h1>Hình Ảnh Di Tích Lịch Sử</h1>
-                    <p>Click on the buttons to change the grid view.</p>
+                    <!-- <p>Click on the buttons to change the grid view.</p> -->
                     <button class="btn" onclick="one()">1</button>
                     <button class="btn active" onclick="two()">2</button>
                     <button class="btn" onclick="four()">4</button>
@@ -744,7 +781,7 @@
 
 
     </div>
-    <script src="https://uhchat.net/code.php?f=ce3feb"></script>
+    
     <script>
         // Get the elements with class="column"
         var elements = document.getElementsByClassName("column");
