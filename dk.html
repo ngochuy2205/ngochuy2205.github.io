@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style1.css">
+
     <link rel="stylesheet" href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
 
 </head>
@@ -16,8 +17,6 @@
         <div id="menu1">
             <ul>
                 <li><i class="fa fa-home" aria-hidden="true"></i> <a href="index.html">Trang Chủ</a></li>
-                <!-- <li><i class="fa fa-address-book" aria-hidden="true"></i><a href="">Giới thiệu</a></li> -->
-                <li><i class="fa fa-sitemap" aria-hidden="true"></i><a href=""> Sơ Đồ</a></li>
             </ul>
 
         </div>
@@ -33,19 +32,12 @@
 
         <nav>
             <div id="menu">
-                <li> <i class="fa fa-home" aria-hidden="true"></i> <a href="index.html">Trang chủ</a>
-                    <ul class="trangchu">
-                        <li><a href="video.mp4" target="page">video</a></li>
-                        <li><a href="#">Địa Điểm Tham quan</a></li>
-                    </ul>
-                </li>
-                <li> <i class="fa fa-hourglass-end" aria-hidden="true"></i> <a href="DTLS.html">Di Tích Lịch sử</a>
-                </li>
+                <li> <i class="fa fa-home" aria-hidden="true"></i> <a href="index.html">Trang chủ</a></li>
+                <li> <i class="fa fa-hourglass-end" aria-hidden="true"></i> <a href="DTLS.html">Di Tích Lịch sử</a></li>
                 <li> <i class="fa fa-file-text-o" aria-hidden="true"></i> <a href="baiviet.html">Bài viết</a> </li>
-                <li> <i class="fa fa-server" aria-hidden="true"></i> <a href="dv.html">Dịch Vụ Tham Quam</a> </li>
-                <li> <i class="fa fa-comments-o" aria-hidden="true"></i> <a href="hoidap.html">Hỏi Đáp & Góp Ý</a></li>
+                <li class="menu__list-item"> <i class="fa fa-server" aria-hidden="true"></i> <a href="dv.html">Dịch Vụ Tham Quam</a></li>
+                <li> <i class="fa fa-address-book" aria-hidden="true"></i> <a href="https://forms.gle/RNNDSMSCBP9kE6Kg8">Liên Hệ</a></li>
             </div>
-
         </nav>
 
 
@@ -72,7 +64,7 @@
             <div    class="thanhtoan">
                 <strike> 990.000đ </strike> <br>
                 <strong>590.000đ</strong> <br>
-                <button type="submit"> <h3 style="color: blue;"> Đặt Tour </h3></button>
+                <button type="submit"> <h3 style="color: blue;"> <a href="thanhtoan.html">Đặt Tour </a> </h3></button>
             </div>
             <div class="noibat">
                 <h2>Địa Điểm Nổi Bật</2>
@@ -113,18 +105,54 @@
 
         <footer>
             <div class="foter">
-                <div> <strong>Trang Giới Thiệu Về Lịch Sử Bình Định </strong></div>
+                <div> <strong>Trang Giới Thiệu Về Lịch Sử Bình Định </strong></div> 
                 <div> Địa Chỉ: xã Bình Nghi, huyện Tây Sơn, tỉnh Bình Định</div>
-                <div>SDT: 077.264.3781 - 0379784780 Mail: huynnps21313@fpt.edu.vn</div>
-                <div><a href="https://www.facebook.com/nguyenngochuy220503/"> Liên hệ qua facebook</a></div>
+                <div>SDT: 077.264.3781 - 0379784780     Mail: huynnps21313@fpt.edu.vn</div> 
             </div>
+
+            <div class="h2">
+                <h2>Kết Nối Với Chúng Tôi </h2>
+                <div class="fbfb">
+                    <a href="https://www.facebook.com/nguyenngochuy220503/"> <img src="img/1260673.png" alt=""></a>
+                    <a href=""> <img src="img/free-twitter-logo-icon-2429-thumb.png" alt=""></a>
+                    <a href="https://www.youtube.com/channel/UC2pXIkyY3A3bAzwsrviPavQ"> <img src="img/free-youtube-logo-icon-2431-thumb.png" alt=""></a>
+                </div>
 
 
         </footer>
 
 
     </div>
-    
+    <!-- Messenger Plugin chat Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Plugin chat code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "402116553606078");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() { 
+        FB.init({
+          xfbml            : true,
+          version          : 'v13.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
 </body>
 
 </html>

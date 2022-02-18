@@ -11,27 +11,27 @@ min-width: 1400px;
 
 /*  */
 #menu1 {
-position: fixed;
-top: 0px;
-right: 0px;
-}
-#menu1 ul {
-list-style-type: none;
-text-align: center;
- }
-#menu1 li {
-color: #770505;
-display: inline-block;
-width: 100px;
-height: 40px;
-line-height: px;
-margin-left: -5px;
-}
-#menu1 a {
-text-decoration: none;
-color: rgb(143, 6, 6);
-display:inline-block;
-}
+  position: fixed;
+  top: 10px;
+  right: 30px;
+  }
+  #menu1 ul {
+  list-style-type: none;
+  text-align: center;
+  font-size: 20px;
+   }
+  #menu1 li {
+  color: #770505;
+  display: inline-block;
+  width: 200px;
+  height: 40px;
+  }
+  #menu1 a {
+  text-decoration: none;
+  color: rgb(143, 6, 6);
+  display:inline-block;
+  
+  }
 
 /*  */
 .chulogo{
@@ -145,7 +145,7 @@ float:left;
 
 /*  */
 .container > aside{
-min-height:1670px;
+min-height:1630px;
 width:25%;
 background-color:rgb(244, 247, 231);
 float:right;
@@ -162,14 +162,26 @@ iframe{
 
 /*  */
 .container > footer{
-border-top:5px double orangered;
-line-height:25px;
-background-color:lightcyan;
-text-align:center;
-font-variant: normal;
-font-family: Arial, Helvetica, sans-serif;
-clear:both;
-}
+
+  padding-top: 40px;
+  border-top:5px solid red;
+  line-height:30px;
+  background-color:rgb(34, 35, 82);
+  text-align:center;
+  font-variant: normal;
+  font-family: Arial, Helvetica, sans-serif;
+  clear:both;
+  color: white;
+  }
+  .foter{
+    margin-right: 350px;
+  }
+  .fbfb img{
+   width: 100px;
+  }
+ .h2{
+   padding-left: 450px;
+ }
 
 .khungtrangchu{
   position: relative;

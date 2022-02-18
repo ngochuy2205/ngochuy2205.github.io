@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
     <link rel='stylesheet prefetch' href='https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css'>
-
     <link rel="stylesheet" href="/resources/demos/style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
@@ -28,8 +27,6 @@
         <div id="menu1">
             <ul>
                 <li><i class="fa fa-home" aria-hidden="true"></i> <a href="index.html">Trang Chủ</a></li>
-                <!-- <li><i class="fa fa-address-book" aria-hidden="true"></i><a href="">Giới thiệu</a></li> -->
-                <li><i class="fa fa-sitemap" aria-hidden="true"></i><a href=""> Sơ Đồ</a></li>
             </ul>
 
         </div>
@@ -45,23 +42,28 @@
 
         <nav>
             <div id="menu">
-                <li> <i class="fa fa-home" aria-hidden="true"></i> <a href="index.html">Trang chủ</a>
-                    <ul class="trangchu">
-                        <li><a href="video.mp4" target="page">video</a></li>
-                        <li><a href="#">Địa Điểm Tham quan</a></li>
-                    </ul>
-                </li>
-                <li> <i class="fa fa-hourglass-end" aria-hidden="true"></i> <a href="DTLS.html">Di Tích Lịch sử</a>
-                </li>
+                <li> <i class="fa fa-home" aria-hidden="true"></i> <a href="index.html">Trang chủ</a></li>
+                <li> <i class="fa fa-hourglass-end" aria-hidden="true"></i> <a href="DTLS.html">Di Tích Lịch sử</a></li>
                 <li> <i class="fa fa-file-text-o" aria-hidden="true"></i> <a href="baiviet.html">Bài viết</a> </li>
-                <li> <i class="fa fa-server" aria-hidden="true"></i> <a href="dv.html">Dịch Vụ Tham Quam</a> </li>
-                <li> <i class="fa fa-comments-o" aria-hidden="true"></i> <a href="hoidap.html">Hỏi Đáp & Góp Ý</a></li>
+                <li class="menu__list-item"> <i class="fa fa-server" aria-hidden="true"></i> <a href="dv.html">Dịch Vụ
+                        Tham Quam</a></li>
+                <li> <i class="fa fa-address-book" aria-hidden="true"></i> <a href="https://forms.gle/RNNDSMSCBP9kE6Kg8">Liên Hệ</a></li>
             </div>
-
         </nav>
 
 
         <article>
+            <div class="timkiemdv">
+                <h2 style="color: rgb(8, 8, 146);"> <strong> Tìm Kiếm Dịch Vụ </strong></h2>
+                <form>
+                    <input type="search" placeholder="Tìm Kiếm dịch vụ..." style="width: 60%; height: 40px ;">
+                    <button style="background-color: black; color: white; width: 100px; height: 40px;" > Tìm Kiếm </button>
+                </form>
+
+            </div>
+
+
+
             <h2 class="tieudeh2"> Tham Quan di tích lịch sử </h2>
 
             <div class="diadiem1">
@@ -95,35 +97,37 @@
             </div> <br> <br> <br>
             <!--  -->
 
-                <div class="diadiem1">
-                    <div class="diadiem12">
-                        <img src="img/1_341189589.jpg" alt=""> <br>
-
-                    </div>
-
-                    <a href="dk.html"><h2>Tham quan bảo tàng Bình Định</h2></a> <br> 
-                    <strong> - Thời Gian : </strong> Trong ngày <br>
-                    <strong> - Giá vé: </strong> Miễn Phí <br>
-                    <strong> - Giờ Hoạt Động: </strong> 7:00 SA - 5:00 CH <br>
-                    <strong> - Email: </strong>baotangbinhdinh@gov.vn <br>
-                    <strong> - Địa điểm: </strong> 26 Nguyễn Huệ, Phường Lê Lợi, Thành phố Quy Nhơn, Tỉnh Bình Định <br>
+            <div class="diadiem1">
+                <div class="diadiem12">
+                    <img src="img/1_341189589.jpg" alt=""> <br>
 
                 </div>
-                <div class="diadiem2">
-                    <div class="diadiem22">
-                        <img src="img/baotangquantrung.jpg" alt="">
-                    </div>
 
-                    <h2><a href="dk.html">Tham quan bảo tàng Quang Trung </a> <br> </h2>
-                    <strong>Giá vé hiện nay: </strong> 30.000 vnd/lần/người <br>
-                    Miễn phí: Trẻ em dưới 6 tuổi, thương binh, bệnh binh( có thẻ) và người khuyết tật <br>
-                    <strong>thời gian hoạt động</strong>
-                    Buổi sáng: từ 7h00 đến 11h30 <br>
-                    Buổi chiều: từ 13h30 đến 17h00 <br>
-                    (Trường hợp đến ngoài giờ , du khách cần liên hệ trước với giám đốc lãnh đạo bảo tàng để xin ý kiến
-                    chỉ đạo)
+                <a href="dk.html">
+                    <h2>Tham quan bảo tàng Bình Định</h2>
+                </a> <br>
+                <strong> - Thời Gian : </strong> Trong ngày <br>
+                <strong> - Giá vé: </strong> Miễn Phí <br>
+                <strong> - Giờ Hoạt Động: </strong> 7:00 SA - 5:00 CH <br>
+                <strong> - Email: </strong>baotangbinhdinh@gov.vn <br>
+                <strong> - Địa điểm: </strong> 26 Nguyễn Huệ, Phường Lê Lợi, Thành phố Quy Nhơn, Tỉnh Bình Định <br>
 
+            </div>
+            <div class="diadiem2">
+                <div class="diadiem22">
+                    <img src="img/baotangquantrung.jpg" alt="">
                 </div>
+
+                <h2><a href="dk.html">Tham quan bảo tàng Quang Trung </a> <br> </h2>
+                <strong>Giá vé hiện nay: </strong> 30.000 vnd/lần/người <br>
+                Miễn phí: Trẻ em dưới 6 tuổi, thương binh, bệnh binh( có thẻ) và người khuyết tật <br>
+                <strong>thời gian hoạt động</strong>
+                Buổi sáng: từ 7h00 đến 11h30 <br>
+                Buổi chiều: từ 13h30 đến 17h00 <br>
+                (Trường hợp đến ngoài giờ , du khách cần liên hệ trước với giám đốc lãnh đạo bảo tàng để xin ý kiến
+                chỉ đạo)
+
+            </div>
 
             <!--  -->
 
@@ -166,18 +170,54 @@
 
         <footer>
             <div class="foter">
-                <div> <strong>Trang Giới Thiệu Về Lịch Sử Bình Định </strong></div>
+                <div> <strong>Trang Giới Thiệu Về Lịch Sử Bình Định </strong></div> 
                 <div> Địa Chỉ: xã Bình Nghi, huyện Tây Sơn, tỉnh Bình Định</div>
-                <div>SDT: 077.264.3781 - 0379784780 Mail: huynnps21313@fpt.edu.vn</div>
-                <div><a href="https://www.facebook.com/nguyenngochuy220503/"> Liên hệ qua facebook</a></div>
+                <div>SDT: 077.264.3781 - 0379784780     Mail: huynnps21313@fpt.edu.vn</div> 
             </div>
+
+            <div class="h2">
+                <h2>Kết Nối Với Chúng Tôi </h2>
+                <div class="fbfb">
+                    <a href="https://www.facebook.com/nguyenngochuy220503/"> <img src="img/1260673.png" alt=""></a>
+                    <a href=""> <img src="img/free-twitter-logo-icon-2429-thumb.png" alt=""></a>
+                    <a href="https://www.youtube.com/channel/UC2pXIkyY3A3bAzwsrviPavQ"> <img src="img/free-youtube-logo-icon-2431-thumb.png" alt=""></a>
+                </div>
 
 
         </footer>
 
 
     </div>
-    
+    <!-- Messenger Plugin chat Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Plugin chat code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "402116553606078");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() { 
+        FB.init({
+          xfbml            : true,
+          version          : 'v13.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
 </body>
 
 </html>
