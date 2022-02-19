@@ -139,7 +139,7 @@ video {
 .container > article{ 
 min-height:600px;
 width:75%;
-background-color:rgb(244, 247, 231);
+background-color:rgb(245, 240, 240);
 float:left;
 }
 
@@ -147,7 +147,7 @@ float:left;
 .container > aside{
 min-height:1630px;
 width:25%;
-background-color:rgb(244, 247, 231);
+background-color:rgb(245, 240, 240);
 float:right;
 }
 img{
